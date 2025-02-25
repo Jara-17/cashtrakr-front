@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 CashTrackr Frontend
 
-## Getting Started
+El frontend de **CashTrackr** está desarrollado con **Next.js 15**, **TypeScript** y **Tailwind CSS**, proporcionando una interfaz moderna y receptiva para la gestión financiera.
 
-First, run the development server:
+## 📋 Requisitos Previos
+
+- **Node.js** (versión 18 o superior)
+- **npm** o **yarn**
+- Servicio backend en ejecución
+
+## 🛠️ Instalación
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/cashtrackr-frontend.git
+   cd cashtrackr-frontend
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   # o
+   yarn install
+   ```
+3. Configura las variables de entorno:
+
+   Crea un archivo `.env.local` en la raíz del proyecto y define las variables necesarias.
+
+## 🔧 Configuración del Entorno
+
+Asegúrate de tener configuradas las variables de entorno necesarias en el archivo `.env.local`.
+
+## 🏃‍♂️ Ejecutar la Aplicación
+
+Para iniciar el servidor de desarrollo:
 
 ```bash
 npm run dev
-# or
+# o
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Esto ejecutará la aplicación en `http://localhost:3000/`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧪 Pruebas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Ejecuta los tests con:
 
-## Learn More
+```bash
+npm test
+# o
+yarn test
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 Funcionalidades
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✅ Panel de control responsivo  
+✅ Seguimiento de transacciones en tiempo real  
+✅ Soporte para modo claro/oscuro  
+✅ Gráficos e informes interactivos  
+✅ Compatibilidad con múltiples monedas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🏗️ Estructura del Proyecto
 
-## Deploy on Vercel
+```
+📂 frontend
+ ┣ 📂 .next *(Archivos de compilación de Next.js)*
+ ┣ 📂 actions *(Acciones del backend)*
+ ┣ 📂 app *(Páginas y layouts principales)*
+ ┣ 📂 components *(Componentes reutilizables de la UI)*
+ ┣ 📂 public *(Recursos estáticos como imágenes y logos)*
+ ┣ 📂 src *(Utilidades, servicios y esquemas de validación)*
+ ┣ 📜 package.json *(Dependencias y scripts del proyecto)*
+ ┣ 📜 tsconfig.json *(Configuración de TypeScript)*
+ ┣ 📜 tailwind.config.ts *(Configuración de Tailwind CSS)*
+ ┣ 📜 next.config.ts *(Configuración de Next.js)*
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Stack Tecnológico
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Next.js 15**
+- **TypeScript**
+- **Tailwind CSS**
+- **React Query**
+- **Zustand**
+- **Jest & React Testing Library**
+
+## 📱 Capturas de Pantalla
+
+_(Añade capturas de pantalla de la aplicación aquí.)_
+
+## 🔐 Características de Seguridad
+
+🔒 Autenticación con **JWT**  
+🔒 Rutas protegidas  
+🔒 Validación de entrada de datos  
+🔒 Protección contra **XSS**
+
+## 📜 Licencia
+
+Este proyecto está bajo la **Licencia MIT**. Consulta el archivo `LICENSE` para más detalles.
+
+## 👥 Contribuyentes
+
+- **Tu Nombre** – Desarrollo inicial – [TuGitHub](https://github.com/tu-usuario)
+
+## 🤝 Cómo Contribuir
+
+1. Haz un fork del proyecto
+2. Crea una rama para tu funcionalidad (`git checkout -b feature/NuevaFuncion`)
+3. Realiza los cambios y haz commit (`git commit -m 'Añadir nueva funcionalidad'`)
+4. Sube los cambios (`git push origin feature/NuevaFuncion`)
+5. Abre un **Pull Request**
+
+## 📦 Referencia de Comandos
+
+```bash
+npm run dev       # Inicia el servidor de desarrollo
+npm run build     # Compila la aplicación
+npm run start     # Ejecuta la aplicación en producción
+npm run test      # Ejecuta las pruebas
+```
