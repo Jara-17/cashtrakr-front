@@ -22,7 +22,9 @@ export default function LoginForm() {
     <>
       <form action={dispatch} className="mt-14 space-y-5" noValidate>
         <div className="flex flex-col gap-2">
-          <label className="font-bold text-2xl">Email</label>
+          <label htmlFor="email" className="font-bold text-2xl">
+            Email
+          </label>
 
           <input
             id="email"
@@ -34,7 +36,9 @@ export default function LoginForm() {
         </div>
 
         <div className="flex flex-col gap-2">
-          <label className="font-bold text-2xl">Password</label>
+          <label htmlFor="password" className="font-bold text-2xl">
+            Password
+          </label>
 
           <input
             type="password"

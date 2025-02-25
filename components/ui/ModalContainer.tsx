@@ -1,4 +1,5 @@
 "use client";
+
 import { Fragment } from "react";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import {
@@ -22,14 +23,17 @@ export default function ModalContainer() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const showModal = searchParams.get("showModal");
-  console.log(showModal);
 
   const show = showModal ? true : false;
 
   const addExpense = searchParams.get("addExpense");
+  const editExpense = searchParams.get("editExpenseId");
+  const deleteExpense = searchParams.get("deleteExpenseId");
 
   const getComponentName = () => {
     if (addExpense) return "AddExpense";
+    if (editExpense) return "EditExpense";
+    if (deleteExpense) return "DeleteExpense";
   };
 
   const componentName = getComponentName();
