@@ -3,8 +3,8 @@
 import getToken from "@/src/auth/token";
 import {
   ErrorResponseSchema,
+  ProfileFormSchema,
   SuccessSchema,
-  UpdateProfileSchema,
 } from "@/src/schemas";
 import { revalidatePath } from "next/cache";
 
@@ -17,7 +17,7 @@ export async function updateProfile(
   prevState: ActionStateType,
   formData: FormData
 ) {
-  const user = UpdateProfileSchema.safeParse({
+  const user = ProfileFormSchema.safeParse({
     name: formData.get("name"),
     lastname: formData.get("lastname"),
     email: formData.get("email"),

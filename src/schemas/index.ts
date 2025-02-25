@@ -94,10 +94,13 @@ export const UserSchema = z.object({
   email: z.string().email(),
 });
 
-export const UpdateProfileSchema = z.object({
+export const ProfileFormSchema = z.object({
   name: z.string().min(1, { message: "El Nombre es obligatorio" }),
   lastname: z.string().min(1, { message: "El Apellido es obligatorio" }),
-  email: z.string().email({ message: "Email no válido" }),
+  email: z
+    .string()
+    .min(1, "El Email es obligatorio")
+    .email({ message: "Email no válido" }),
 });
 
 export const ExpenseAPIResponseSchema = z.object({
